@@ -1,0 +1,21 @@
+package annotationdb;
+
+message proposal {
+
+    required int32 xmin = 1;      // proposal x
+    required int32 ymin = 2;      // proposal y 
+    required int32 w = 3;  // proposal width
+    required int32 h = 4; // proposal height
+    required string c = 5; // proposal class
+    required string entry = 6;  // image path
+
+}
+
+
+
+message image{
+	
+	required string entry = 1;
+	repeated string object = 2;
+
+}
